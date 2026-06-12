@@ -34,6 +34,10 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.get('/hello', (req, res) => {
+  res.send('Hello! This is a GET API working 🚀');
+});
+
 // 404 Handler
 app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });
