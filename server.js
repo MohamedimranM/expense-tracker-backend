@@ -24,6 +24,7 @@ mongoose.connect(process.env.mongodburl, {
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/expenses', require('./routes/expenses'));
 app.use('/api/dashboard', require('./routes/dashboard'));
+app.use('/api/reports', require('./routes/reports'));
 
 // Error Handling Middleware
 app.use((err, req, res, next) => {
